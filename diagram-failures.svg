@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360">
+  <rect width="800" height="360" rx="14" fill="#fafafa"/>
+  <text x="190" y="36" font-family="monospace" font-size="15" text-anchor="middle" fill="#5b6b7c">failure mode one: unhealthy gate blocks the chain</text>
+  <rect x="60" y="60" width="260" height="130" rx="10" fill="#fbeaea" stroke="#c0392b" stroke-width="2"/>
+  <ellipse cx="190" cy="125" rx="54" ry="36" fill="#f3caca" stroke="#c0392b" stroke-width="2"/>
+  <text x="190" y="138" font-family="monospace" font-size="14" text-anchor="middle" fill="#7a1f1f">db unhealthy</text>
+  <path d="M 320 125 L 455 125" stroke="#c0392b" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#no)"/>
+  <line x1="445" y1="115" x2="468" y2="135" stroke="#c0392b" stroke-width="3"/>
+  <line x1="468" y1="115" x2="445" y2="135" stroke="#c0392b" stroke-width="3"/>
+  <rect x="470" y="60" width="260" height="130" rx="10" fill="#f4f4f4" stroke="#9aa7b4" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="600" y="120" font-family="monospace" font-size="14" text-anchor="middle" fill="#8a96a3">app never created</text>
+  <text x="600" y="142" font-family="monospace" font-size="12" text-anchor="middle" fill="#a6b1bd">"dependency failed to start"</text>
+  <text x="600" y="162" font-family="monospace" font-size="12" text-anchor="middle" fill="#a6b1bd">loud, immediate, debuggable</text>
+  <text x="400" y="222" font-family="monospace" font-size="15" text-anchor="middle" fill="#5b6b7c">failure mode two: gate passes, runtime blip afterwards</text>
+  <rect x="60" y="240" width="260" height="80" rx="10" fill="#e2f3e7" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="190" y="278" font-family="monospace" font-size="13" text-anchor="middle" fill="#1d5c36">healthy at startup</text>
+  <path d="M 320 280 H 455" stroke="#2e9e5b" stroke-width="3" marker-end="url(#ok)"/>
+  <rect x="470" y="240" width="260" height="80" rx="10" fill="#e8eef5" stroke="#2f6fba" stroke-width="2"/>
+  <text x="600" y="272" font-family="monospace" font-size="13" text-anchor="middle" fill="#1f3d5c">app running...</text>
+  <text x="600" y="294" font-family="monospace" font-size="12" text-anchor="middle" fill="#5b6b7c">db dies later -> app needs its own retry</text>
+  <defs>
+    <marker id="no" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 z" fill="#c0392b"/></marker>
+    <marker id="ok" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 z" fill="#2e9e5b"/></marker>
+  </defs>
+</svg>
